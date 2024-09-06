@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Medicare Hospital</title>
+    <style>
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: rgb(101, 177, 199);
+           }
+
+        li {
+           float: left;
+           }
+
+        li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 25px 25px;
+             text-decoration: none;
+             font-family: sans-serif;
+             }
+
+        li a:hover {
+            background-color: #4d7f94;
+                   } 
+        body {
+            background-color: rgb(236, 232, 232);
+            
+        }  
+        div {
+            font-family: sans-serif;
+            text-align: center;
+            color: #4d7f94;
+            font-size: large;
+            -webkit-text-stroke: 0.4px;
+            -webkit-text-stroke-color: black;
+            
+        
+        }  
+        .img1 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            opacity: 0.3;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        } 
+        .button {
+            position: relative;
+            background-color: #4d7f94;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+  
+        .button:after {
+            content: "";
+            background: #f1f1f1;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+  
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }     
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="images/logo.jpeg" width="120" style="float: left;"></li>
+        <li><a href="index.html" target="_parent">Ana Sayfa</a></li>
+        <li><a class="active" href="aboutus.html" target="_parent">Hakkımızda</a></li>
+        <li><a href="services.html" target="_parent">Hizmetler</a></li>
+        <li><a href="doctors.html" target="_parent">Doktorlar</a></li>
+        <li><a href="appoinment.html" target="_parent">Randevu Al</a></li>
+        <li><a href="contact.html" target="_parent">İletişim</a></li>
+      </ul>
+      <img class="img1" src="images/hospital.jpeg" />
+      <div>
+        <br/><br/><br/>
+        <h1 style="text-align: center;">RANDEVU AL</h1>
+        <br/><br/><br/><br/>
+        <h2>Poliklinik Seçiniz:</h2>
+        <form action="appoinment3.html">
+            <input list="Poliklinikler" name="Poliklinikler">
+            <datalist id="Poliklinikler">
+              <option value="Dahiliye">
+              <option value="Ortopedi">
+              <option value="Kadın Doğum">
+              <option value="Dermatoloji">
+              <option value="Psikiyatri">
+            </datalist>
+          </form>
+          <br/><br/>
+        <h2>Doktor Seçiniz:</h2>
+        <form action="appoinment3.html">
+            <input list="Doktorlar" name="Doktorlar">
+            <datalist id="Doktorlar">
+              <option value="Prof. Dr. Aylin Yılmaz">
+              <option value="Uzm. Dr. Mehmet Demir">
+              <option value="Dr. Elif Arslan">
+              <option value="Doç. Dr. Ahmet Kaya">
+              <option value="Op. Dr. Sedef Uysal">
+            </datalist>
+        </form>
+        <br/><br/>
+        <h2>Tarih Seçiniz:</h2>
+        <form action="appoinment3.html">
+            <label for="Tarih"></label>
+            <input type="date" id="Tarih" name="Tarih">
+            <br/><br/><br/><br/>
+            <button class="button" type="submit">Devam Et</button>
+        </form>
+        <br/><br/><br/><br/>
+      </div>
+</body>
+<footer>
+    <ul>
+        <li><a class="active" href="index.html" target="_parent">Gizlilik Politikası</a></li>
+        <li><a href="aboutus.html" target="_parent">Kullanım Şartları</a></li>
+        <li><a href="services.html" target="_parent">İletişim</a></li>
+      </ul>
+
+</footer>
+</html>

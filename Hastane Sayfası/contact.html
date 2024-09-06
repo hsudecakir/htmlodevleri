@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Medicare Hospital</title>
+    <style>
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: rgb(101, 177, 199);
+           }
+
+        li {
+           float: left;
+           }
+
+        li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 25px 25px;
+             text-decoration: none;
+             font-family: sans-serif;
+             }
+
+        li a:hover {
+            background-color: #4d7f94;
+                   } 
+        body {
+            background-color: rgb(236, 232, 232);
+            
+        }  
+        div {
+            font-family: sans-serif;
+            color:#296078;
+            font-size: large;
+            -webkit-text-stroke: 0.4px;
+            -webkit-text-stroke-color: black;
+            }
+        .img2  {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            opacity: 0.3;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+        table {
+                border-collapse: collapse;
+                width: 50%;
+            }
+
+            td, th {
+                border: 2px solid black;
+                text-align: center;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            
+    </style>
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <ul>
+        <li><img class="img1" src="images/logo.jpeg" width="120" style="float: left;"></li>
+        <li><a href="index.html" target="_parent">Ana Sayfa</a></li>
+        <li><a class="active" href="aboutus.html" target="_parent">Hakkımızda</a></li>
+        <li><a href="services.html" target="_parent">Hizmetler</a></li>
+        <li><a href="doctors.html" target="_parent">Doktorlar</a></li>
+        <li><a href="appoinment.html" target="_parent">Randevu Al</a></li>
+        <li><a href="contact.html" target="_parent">İletişim</a></li>
+      </ul>
+      <img class="img2" src="images/logo.jpeg"  />
+      <div>
+        <center>
+        <br/>
+        <!-- İletişim Bilgileri -->
+        <h2>İLETİŞİM BİLGİLERİ:</h2>
+        <br/>
+        <br/>
+        <div>Medicare Hastanesi İletişim Bilgileri</div>
+        <br/>
+        <br/>
+        <table>
+            <tr>
+              <th>ADRES</th>
+              <td>Medicare Hastanesi
+                Atatürk Caddesi No:123,
+                34000, Kadıköy, İstanbul, Türkiye
+                </td>
+            </tr>
+            <tr>
+                <th>TELEFON</th>
+                <td>
+                    <p>+90 (216) 123 45 67</p>
+                    <p>+90 (216) 765 43 21 (Acil Servis)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>E-POSTA</th>
+                <td>
+                    <p>info@medicarehastanesi.com</p>
+                    <p>randevu@medicarehastanesi.com (Randevu ve Bilgi)</p>
+                </td>
+            </tr>
+            <tr>  
+              <th>ÇALIŞMA SAATLERİ</th>   
+              <td>
+                <p>Poliklinikler: Pazartesi - Cuma: 08:00 - 18:00</p>
+                <p>Acil Servis: 7/24</p>
+              </td>
+            </tr>
+          </table>
+        <br/>
+        <br/>
+        <br/>
+        <!-- İletişim Formu -->
+        <h2>BİZE ULAŞIN</h2> 
+        <br/>
+        <br/>
+        <div> Aşağıdaki formu doldurarak sorularınızı, görüşlerinizi veya önerilerinizi iletebilirsiniz. Temsilcilerimiz en kısa sürede sizinle iletişime geçecektir.</div>
+        <br/>
+        <br/>
+        <form action="mail:info@medicarehastanesi.com" > 
+            <iabel>Ad Soyad:</iabel>
+            <br />
+            <input type="text" />
+            <br />
+            <label>E-posta adresi:</label>
+            <br />
+            <input type="text" />
+            <br />
+            <label>Telefon Numarası:</label>
+            <br />
+            <input type="text" />
+            <br/>
+            <label>Konu:</label>
+            <br />
+            <input type="text" />
+            <br/>
+            <label>Mesajınız:</label>
+            <br />
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br/>
+            <label>Cinsiyetiniz:</label>
+            <br/>
+            <label>Erkek <input type="radio" name="gender" value="1"> </label>
+            <label>Kadın <input type="radio" name="gender" value="1"> </label>
+            <br />
+            <button type="submit">Gönder. </button>
+         </form>
+        </center>
+      </div>
+</body>
+<footer>
+    <ul>
+        <li><a class="active" href="index.html" target="_parent">Gizlilik Politikası</a></li>
+        <li><a href="aboutus.html" target="_parent">Kullanım Şartları</a></li>
+        <li><a href="services.html" target="_parent">İletişim</a></li>
+      </ul>
+
+</footer>
+</html>

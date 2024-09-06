@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Medicare Hospital</title>
+    <style>
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: rgb(101, 177, 199);
+           }
+
+        li {
+           float: left;
+           }
+
+        li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 25px 25px;
+             text-decoration: none;
+             font-family: sans-serif;
+             }
+
+        li a:hover {
+            background-color: #4d7f94;
+                   } 
+        body {
+            background-color: rgb(236, 232, 232);
+            
+        }  
+        div {
+            font-family: sans-serif;
+            color:#296078;
+            font-size: large;
+            -webkit-text-stroke: 0.4px;
+            -webkit-text-stroke-color: black;
+            }
+        .img2  {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            opacity: 0.3;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            position:relative;
+            width: 20%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            right: 0;
+            background-color: #4d7f94;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 100%;
+            left: 0; 
+        }
+
+        .text {
+            white-space: nowrap; 
+            color: white;
+            font-size: 20px;
+            position:relative;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <ul>
+        <li><img class="img1" src="images/logo.jpeg" width="120" style="float: left;"></li>
+        <li><a href="index.html" target="_parent">Ana Sayfa</a></li>
+        <li><a class="active" href="aboutus.html" target="_parent">Hakkımızda</a></li>
+        <li><a href="services.html" target="_parent">Hizmetler</a></li>
+        <li><a href="doctors.html" target="_parent">Doktorlar</a></li>
+        <li><a href="appoinment.html" target="_parent">Randevu Al</a></li>
+        <li><a href="contact.html" target="_parent">İletişim</a></li>
+      </ul>
+    <!-- Doktorlar -->
+      <img class="img2" src="images/logo.jpeg"   />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <h1 style="text-align: center;">DOKTORLARIMIZ</h1>
+      <br/>
+        <h2 style="text-align: center;">Başhekim</h2>
+      <br/>
+      <center>
+      <div class="container">
+        <img src="images/EnineDemir.jpeg" alt="EmineDemir" class="image">
+      <div class="overlay">
+        <div class="text" style="text-align: center;">
+            <p><b>Prof. Dr. Emine Demir</b></p>          
+            <p>Kardiyoloji Uzmanı</p>
+        </div>
+      </div>
+      </div>
+      </center>
+      <center>
+      <br/><br/><br/>
+      <h2 style="text-align: center;">Yönetim Kadrosu</h2>
+      <br/><br/>
+      <div class="container">
+        <img src="images/MuratKaya.jpeg" alt="MuratKaya" class="image">
+      <div class="overlay">
+        <div class="text" style="text-align: center;">
+            <p><b>Prof. Dr. Murat Kaya</b></p>          
+            <p>Ortopedi ve Travmatoloji </p>
+            <p>Uzmanı</p>
+        </div>
+      </div>
+      </div>
+      <br/><br/>
+        <div class="container">
+            <img src="images/AyşeYılmaz.jpeg" alt="EmineDemir" class="image">
+          <div class="overlay">
+            <div class="text" style="text-align: center;">
+                <p><b>Prof. Dr. Ayşe Yıldız</b></p>          
+                <p>Kadın Hastalıkları ve Doğum</p>
+                <p>Uzmanı</p>
+            </div>
+          </div>
+          </div>
+        <br/><br/>
+      <div class="container">
+        <img src="images/Ali.jpeg" alt="EmineDemir" class="image">
+      <div class="overlay">
+        <div class="text" style="text-align: center;">
+            <p><b>Prof. Dr. Ali Yılmaz</b></p>          
+            <p>Dahiliye (İç Hastalıkları)</p>
+            <p>Uzmanı</p>
+        </div>
+      </div>
+      </div>
+      </center>
+        
+      </div>
+      <br/><br/>
+</body>
+<footer>
+    <ul>
+        <li><a class="active" href="index.html" target="_parent">Gizlilik Politikası</a></li>
+        <li><a href="aboutus.html" target="_parent">Kullanım Şartları</a></li>
+        <li><a href="services.html" target="_parent">İletişim</a></li>
+      </ul>
+
+</footer>
+</html>
